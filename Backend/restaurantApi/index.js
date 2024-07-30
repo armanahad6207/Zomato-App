@@ -8,14 +8,13 @@ const mongo = require("mongodb");
 const MongoClient = mongo.MongoClient;
 let PORT = 4000;
 const MONGO_URL = "mongodb://127.0.0.1:27017";
-let db;
+
 app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
   res.send(" weilcome to my own server");
 });
-
 
 //get the locations data
 
